@@ -73,8 +73,8 @@ struct ContentView: View {
             RoundedRectangle(cornerRadius: 20)
                                 .foregroundStyle(Color.orange)
                                 .padding()
-                                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                                .frame(height: 280)
+                                .shadow(radius: 10)
+                                .frame(height: 320)
             VStack{
                 Image(systemName: "person.circle")
                     .resizable()
@@ -87,6 +87,10 @@ struct ContentView: View {
                 Text("Password : **********")
                     .font(.callout)
                     .foregroundStyle(.white)
+                
+                Text("Imesha Nanayakkara")
+                    .padding(20)
+                    .foregroundStyle(Color.white)
             }
         }
     }

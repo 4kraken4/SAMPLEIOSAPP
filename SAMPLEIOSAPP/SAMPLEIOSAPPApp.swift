@@ -4,7 +4,9 @@ import SwiftUI
 struct SAMPLEIOSAPPApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView(content: {
+                LoginView()
+            })
         }
     }
 }
