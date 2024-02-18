@@ -11,6 +11,11 @@
 		9309DD662B2B2EDA00415CEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9309DD652B2B2EDA00415CEC /* ContentView.swift */; };
 		9309DD682B2B2EDB00415CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9309DD672B2B2EDB00415CEC /* Assets.xcassets */; };
 		9309DD6B2B2B2EDB00415CEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9309DD6A2B2B2EDB00415CEC /* Preview Assets.xcassets */; };
+		9325847D2B80B7020051E7B1 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325847C2B80B7020051E7B1 /* MovieViewModel.swift */; };
+		9325847F2B80BB0A0051E7B1 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325847E2B80BB0A0051E7B1 /* MoviesListView.swift */; };
+		932584812B80BFDB0051E7B1 /* MoviesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932584802B80BFDB0051E7B1 /* MoviesListModel.swift */; };
+		932584842B80CC370051E7B1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 932584832B80CC370051E7B1 /* Kingfisher */; };
+		932584872B80CFE90051E7B1 /* ARViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932584862B80CFE90051E7B1 /* ARViewUIKit.swift */; };
 		9382EF752B7777B000C144ED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382EF742B7777B000C144ED /* LoginView.swift */; };
 		9382EF792B77820900C144ED /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382EF782B77820900C144ED /* LoginViewModel.swift */; };
 		9382EF7B2B7790AD00C144ED /* WeatherHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382EF7A2B7790AD00C144ED /* WeatherHomeView.swift */; };
@@ -25,6 +30,10 @@
 		9309DD652B2B2EDA00415CEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9309DD672B2B2EDB00415CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9309DD6A2B2B2EDB00415CEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9325847C2B80B7020051E7B1 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		9325847E2B80BB0A0051E7B1 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		932584802B80BFDB0051E7B1 /* MoviesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListModel.swift; sourceTree = "<group>"; };
+		932584862B80CFE90051E7B1 /* ARViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewUIKit.swift; sourceTree = "<group>"; };
 		9382EF742B7777B000C144ED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9382EF782B77820900C144ED /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9382EF7A2B7790AD00C144ED /* WeatherHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHomeView.swift; sourceTree = "<group>"; };
@@ -38,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932584842B80CC370051E7B1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 		9309DD622B2B2EDA00415CEC /* SAMPLEIOSAPP */ = {
 			isa = PBXGroup;
 			children = (
+				932584852B80CFD20051E7B1 /* UIComponents */,
 				9382EF7E2B7790E000C144ED /* Model */,
 				9382EF772B77818400C144ED /* ViewModels */,
 				9382EF762B77813C00C144ED /* View */,
@@ -83,11 +94,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		932584852B80CFD20051E7B1 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				932584862B80CFE90051E7B1 /* ARViewUIKit.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		9382EF762B77813C00C144ED /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9382EF742B7777B000C144ED /* LoginView.swift */,
 				9382EF7A2B7790AD00C144ED /* WeatherHomeView.swift */,
+				9325847E2B80BB0A0051E7B1 /* MoviesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +117,7 @@
 			children = (
 				9382EF782B77820900C144ED /* LoginViewModel.swift */,
 				9382EF7C2B7790CC00C144ED /* WeatherHomeViewModel.swift */,
+				9325847C2B80B7020051E7B1 /* MovieViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -105,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				9382EF7F2B7790F500C144ED /* WeatherDataModel.swift */,
+				932584802B80BFDB0051E7B1 /* MoviesListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +147,9 @@
 			dependencies = (
 			);
 			name = SAMPLEIOSAPP;
+			packageProductDependencies = (
+				932584832B80CC370051E7B1 /* Kingfisher */,
+			);
 			productName = SAMPLEIOSAPP;
 			productReference = 9309DD602B2B2EDA00415CEC /* SAMPLEIOSAPP.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 9309DD572B2B2EDA00415CEC;
+			packageReferences = (
+				932584822B80CC370051E7B1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 9309DD612B2B2EDA00415CEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,9 +211,13 @@
 				9309DD662B2B2EDA00415CEC /* ContentView.swift in Sources */,
 				9382EF752B7777B000C144ED /* LoginView.swift in Sources */,
 				939158C32B772E3500D6940F /* TextViewCustom.swift in Sources */,
+				932584872B80CFE90051E7B1 /* ARViewUIKit.swift in Sources */,
 				9382EF802B7790F500C144ED /* WeatherDataModel.swift in Sources */,
+				9325847F2B80BB0A0051E7B1 /* MoviesListView.swift in Sources */,
+				9325847D2B80B7020051E7B1 /* MovieViewModel.swift in Sources */,
 				9382EF7D2B7790CC00C144ED /* WeatherHomeViewModel.swift in Sources */,
 				9382EF792B77820900C144ED /* LoginViewModel.swift in Sources */,
+				932584812B80BFDB0051E7B1 /* MoviesListModel.swift in Sources */,
 				9309DD642B2B2EDA00415CEC /* SAMPLEIOSAPPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		932584822B80CC370051E7B1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		932584832B80CC370051E7B1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 932584822B80CC370051E7B1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9309DD582B2B2EDA00415CEC /* Project object */;
 }
